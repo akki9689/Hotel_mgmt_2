@@ -156,6 +156,10 @@ width: 50%;
   display: flex;
   height: 20vh;
  }
+ #recipeContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
 }
 @media only screen and (min-width: 657px) {
   #menu{
@@ -163,6 +167,10 @@ width: 50%;
   }
   #burger-menu{
     display: none;
+  }
+  #recipeContainer{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -215,7 +223,7 @@ p {
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px;
-  width: 38vw;
+  width: 20vw;
   height: 73vh;
   display: inline-block;
   border-radius: 10px;
@@ -232,7 +240,7 @@ p {
 
 .recipe-card img {
   height: 40vh;
-  width: 38vw;
+  width: 20vw;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -543,7 +551,8 @@ footer li {
     width: 100%;
   }
   .recipe-container {
-    display: block;
+    display: flex;
+    
   }
 
   .button-container button {
@@ -597,6 +606,7 @@ footer li {
 /* Hover effect for recipe cards */
 .recipe-card:hover .image-container {
   transform: scale(1.05);
+ 
 }
 
 /* Hover effect for nav links */
